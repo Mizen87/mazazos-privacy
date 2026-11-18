@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mazazos para Android — Política de privacidad</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         background:#0b0c14; color:#e8e9f0; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:30px; margin:0 0 6px; background:linear-gradient(90deg,#ffe08a,#f59e2c);
+       -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { color:#9c9fb4; margin:0 0 30px; font-size:14px; }
+  h2 { font-size:19px; margin:34px 0 10px; color:#f7b84b; }
+  p, li { color:#c9cbdb; }
+  li { margin:6px 0; }
+  .box { background:#141626; border:1px solid #262a42; border-radius:14px; padding:16px 20px; margin:18px 0; }
+  .ok { border-left:3px solid #3ecfbf; }
+  .legal { font-size:14px; color:#9c9fb4; }
+  a { color:#7fd8ff; }
+  footer { margin-top:42px; padding-top:18px; border-top:1px solid #262a42; color:#7c7f95; font-size:13px; }
+  .lang { margin-bottom:26px; }
+  .lang a { margin-right:14px; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang"><a href="#es">Español</a><a href="#en">English</a></div>
+
+  <h1 id="es">Política de privacidad — Mazazos para Android</h1>
+  <p class="sub">Última actualización: 18 de noviembre de 2026 · Esta es la política de la versión de
+  Android (Google Play). La de iPhone y iPad está <a href="./">en esta otra página</a>.</p>
+
+  <div class="box ok">
+    <strong>Resumen:</strong> Mazazos no tiene cuentas, no usa publicidad ni analítica propia, y no
+    envía tu información a ningún servidor nuestro. Tus cartas, álbumes y mazos se guardan en tu
+    dispositivo. La versión de Android usa dos bibliotecas de Google (el reconocimiento de texto
+    ML Kit y la biblioteca de pagos de Google Play) que envían a Google datos técnicos de
+    diagnóstico. Lo explicamos abajo.
+  </div>
+
+  <h2>Qué datos se guardan</h2>
+  <p>Todo lo que la app guarda se queda <strong>en tu dispositivo</strong> y desaparece si
+  desinstalas la aplicación:</p>
+  <ul>
+    <li>Tus cartas, álbumes y mazos, con sus precios.</li>
+    <li>Las listas de los mazos de amigos que abras para compararlos (solo el texto de la lista).</li>
+    <li>Lo que llevas escaneado y aún no has guardado, para no perderlo si la app se cierra.</li>
+    <li>Tus ajustes: idioma, fuente de precios, voz, sonido, vibración y tema.</li>
+    <li>Solo si activas «Guardar capturas del escáner» (en Ajustes, apagado por defecto): fotos
+    de la cámara mientras escaneas, como mucho una por segundo y las 300 últimas. No salen del
+    dispositivo salvo que tú las compartas, y las puedes borrar desde la propia app.</li>
+  </ul>
+  <p>El desarrollador no tiene acceso a ninguno de estos datos. Si tienes activadas las copias de
+  seguridad de Android, el sistema puede guardar una copia cifrada de los datos de la app en tu
+  cuenta de Google, como con cualquier otra app.</p>
+
+  <h2>Cámara</h2>
+  <ul>
+    <li>Se usa para reconocer tus cartas mientras escaneas.</li>
+    <li>El reconocimiento se hace <strong>en el propio dispositivo</strong>: las imágenes de la
+    cámara no se envían a ningún servidor.</li>
+    <li>Puedes revocar el permiso en los ajustes de Android; el resto de la app sigue funcionando.</li>
+  </ul>
+
+  <h2>Reconocimiento de texto (ML Kit de Google)</h2>
+  <ul>
+    <li>Para leer el nombre y la edición de las cartas, la app usa ML Kit de Google, que funciona
+    <strong>en el propio dispositivo</strong>: ni las imágenes ni el texto que lee se envían a Google.
+    Lo leído (el nombre, la edición y el número) solo se usa para buscar la carta en Scryfall
+    (ver «Servicios externos»).</li>
+    <li>ML Kit envía a Google, por su cuenta y cifrados (HTTPS), datos técnicos para diagnosticar y
+    mejorar su servicio: el fabricante, el modelo y la versión de Android del dispositivo y sus
+    aceleradores de aprendizaje automático; el idioma, el país, la zona horaria, el tipo de red y el
+    operador móvil; el nombre y la versión de la app; tiempos de respuesta, el tipo de operación, la
+    versión de la función, el formato y el tamaño de las imágenes analizadas (no las imágenes) y
+    códigos de error; y <strong>un identificador aleatorio de esta instalación</strong>, que no es
+    el identificador de publicidad ni sirve para identificarte. Se borra al borrar los datos de la
+    app o desinstalarla, salvo que se restaure desde una copia de seguridad de Android.</li>
+    <li>Estos envíos no se pueden desactivar desde la app. Según Google, estos datos no se pasan a
+    terceros. Más información en la
+    <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">página de ML Kit sobre los datos</a>
+    y en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a>.</li>
+    <li>El detector de cartas con IA (ONNX Runtime) también funciona en el dispositivo y tiene su
+    telemetría desactivada: no envía nada.</li>
+  </ul>
+
+  <h2>Micrófono y reconocimiento de voz</h2>
+  <p>Puedes buscar una carta diciendo su nombre. Sobre esta función:</p>
+  <ul>
+    <li>El micrófono <strong>solo se activa mientras usas el botón del micrófono</strong> en Buscar.</li>
+    <li>La grabación <strong>no se guarda</strong> en ningún fichero ni se envía al desarrollador.</li>
+    <li>La transcripción la hace el servicio de reconocimiento de voz de tu dispositivo (normalmente,
+    el de Google). Sin conexión, o cuando el dispositivo lo permite, se hace en el propio dispositivo;
+    si no, ese servicio puede enviar el audio a sus servidores para transcribirlo, conforme a la
+    política de privacidad de su proveedor (la de Google:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>).</li>
+    <li>Puedes revocar el permiso en los ajustes de Android; el resto de la app sigue funcionando.</li>
+  </ul>
+
+  <h2>Compras (Google Play)</h2>
+  <ul>
+    <li>Mazazos PRO se compra con Google Play. Los datos de pago los recoge Google Play y Mazazos no
+    los ve.</li>
+    <li>La biblioteca de pagos de Google Play envía también a Google, cifrados, datos técnicos de sus
+    conexiones: el modelo, el fabricante y la versión de Android del dispositivo, la versión de la app,
+    y las respuestas, los errores y los tiempos de esas conexiones, con un número aleatorio que cambia
+    cada vez que se abre la app.</li>
+  </ul>
+
+  <h2>Servicios externos que usa la app</h2>
+  <p>Para funcionar, Mazazos se conecta a estos servicios. Ninguno recibe datos personales tuyos,
+  más allá de la dirección IP que recibe cualquier servidor al que se conecta un dispositivo:</p>
+  <ul>
+    <li><strong>Scryfall</strong> (<a href="https://scryfall.com" target="_blank" rel="noopener">scryfall.com</a>):
+    los datos, las imágenes y los precios de las cartas. Se envía lo que buscas o el nombre, la
+    edición y el número de la carta que se está reconociendo.</li>
+    <li><strong>Commander Spellbook</strong> (<a href="https://commanderspellbook.com" target="_blank" rel="noopener">commanderspellbook.com</a>):
+    los combos del análisis del mazo. Se envían los nombres de las cartas de ese mazo.</li>
+    <li><strong>Apple</strong>: su buscador de apps, para enseñar los nombres y los iconos de las
+    otras apps del desarrollador.</li>
+    <li><strong>Google</strong>: Google Play (la compra de Mazazos PRO y las fichas de las otras apps
+    del desarrollador) y los datos técnicos de ML Kit y de la biblioteca de pagos, descritos arriba.</li>
+  </ul>
+
+  <h2>Compartir mazos</h2>
+  <p>El código QR y la lista de un mazo solo salen de tu dispositivo si tú decides compartirlos,
+  y van a quien tú elijas.</p>
+
+  <h2>Lo que NO hacemos</h2>
+  <ul>
+    <li>No hay cuentas ni registro.</li>
+    <li>No hay publicidad ni redes de anuncios. El cartel con las otras apps del desarrollador
+    no recoge nada.</li>
+    <li>Aparte de los datos técnicos de las bibliotecas de Google descritos arriba, no hay analítica
+    ni seguimiento.</li>
+    <li>No se recoge la ubicación, la agenda, las fotos de tu galería ni el identificador de
+    publicidad.</li>
+    <li>No se venden datos.</li>
+  </ul>
+
+  <h2>Menores</h2>
+  <p>Mazazos no está dirigida a niños menores de 13 años y no pide datos personales a nadie.</p>
+
+  <h2>Cambios</h2>
+  <p>Si la app añade alguna función que trate datos de otra forma, esta página se actualizará
+  antes de publicar esa versión.</p>
+
+  <h2>Contacto</h2>
+  <p>Cualquier duda: <a href="mailto:jucabime@hotmail.com">jucabime@hotmail.com</a></p>
+
+  <p class="legal">Mazazos es Contenido de Fans no oficial permitido bajo la Política de Contenido
+  de Fans. No está aprobado ni respaldado por Wizards. Parte de los materiales usados son propiedad
+  de Wizards of the Coast. ©Wizards of the Coast LLC. Datos e imágenes de cartas: Scryfall.</p>
+
+  <hr style="border:0;border-top:1px solid #262a42;margin:46px 0 30px">
+
+  <h1 id="en">Privacy Policy — Mazazos for Android</h1>
+  <p class="sub">Last updated: 18 November 2026 · This is the policy for the Android version
+  (Google Play). The one for iPhone and iPad is <a href="./">on this other page</a>.</p>
+
+  <div class="box ok">
+    <strong>Summary:</strong> Mazazos has no accounts, uses no advertising or analytics of its own,
+    and sends nothing to any server of ours. Your cards, binders and decks are stored on your
+    device. The Android version uses two Google libraries (ML Kit text recognition and the Google
+    Play billing library) that send Google technical diagnostic data. Details below.
+  </div>
+
+  <h2>What is stored</h2>
+  <p>Everything the app stores stays <strong>on your device</strong> and is removed if you
+  delete the app:</p>
+  <ul>
+    <li>Your cards, binders and decks, with their prices.</li>
+    <li>The lists of friends' decks you open to compare them (just the text of the list).</li>
+    <li>What you have scanned but not saved yet, so it isn't lost if the app closes.</li>
+    <li>Your settings: language, price source, voice, sound, haptics and theme.</li>
+    <li>Only if you turn on “Save scanner captures” (in Settings, off by default): camera photos
+    while you scan, at most one per second and the last 300. They never leave the device unless
+    you share them, and you can delete them from the app.</li>
+  </ul>
+  <p>The developer has no access to any of this data. If you have Android backups turned on, the
+  system may keep an encrypted copy of the app's data in your Google account, as with any other app.</p>
+
+  <h2>Camera</h2>
+  <ul>
+    <li>Used to recognise your cards while you scan.</li>
+    <li>Recognition runs <strong>on the device</strong>: camera images are never sent to any server.</li>
+    <li>You can revoke the permission in Android settings; the rest of the app keeps working.</li>
+  </ul>
+
+  <h2>Text recognition (Google ML Kit)</h2>
+  <ul>
+    <li>To read card names and sets, the app uses Google's ML Kit, which runs <strong>on the
+    device</strong>: neither the images nor the text it reads are sent to Google. What is read (the
+    name, set and number) is only used to look the card up on Scryfall (see “External services”).</li>
+    <li>On its own, ML Kit sends Google technical data, encrypted (HTTPS), to diagnose and improve its
+    service: the device's manufacturer, model, Android version and machine-learning accelerators;
+    language, country, time zone, network type and mobile carrier; the app's name and version;
+    response times, the type of operation, the feature version, the format and size of the analysed
+    images (not the images) and error codes; and <strong>a random identifier for this
+    installation</strong>, which is not the advertising ID and does not identify you. It is deleted
+    when you clear the app's data or uninstall it, unless it is restored from an Android backup.</li>
+    <li>This cannot be turned off from the app. According to Google, this data is not passed on to
+    third parties. More information on
+    <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">ML Kit's data disclosure page</a>
+    and in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+    <li>The AI card detector (ONNX Runtime) also runs on the device and has its telemetry turned off:
+    it sends nothing.</li>
+  </ul>
+
+  <h2>Microphone and speech recognition</h2>
+  <ul>
+    <li>You can search for a card by saying its name. The microphone is <strong>only active while
+    you use the microphone button</strong> in Search.</li>
+    <li>Recordings are <strong>never stored</strong> and never sent to the developer.</li>
+    <li>Transcription is done by your device's speech recognition service (usually Google's). Offline,
+    or when the device supports it, it runs on the device; otherwise that service may send the audio
+    to its servers to transcribe it, under its provider's privacy policy (Google's:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>).</li>
+    <li>You can revoke the permission in Android settings; the rest of the app keeps working.</li>
+  </ul>
+
+  <h2>Purchases (Google Play)</h2>
+  <ul>
+    <li>Mazazos PRO is bought through Google Play. Payment details are collected by Google Play and
+    Mazazos never sees them.</li>
+    <li>The Google Play billing library also sends Google technical data about its connections,
+    encrypted: the device's model, manufacturer and Android version, the app's version, and those
+    connections' responses, errors and timings, with a random number that changes every time the
+    app is opened.</li>
+  </ul>
+
+  <h2>External services the app uses</h2>
+  <p>To work, Mazazos connects to these services. None of them receives personal data from you,
+  beyond the IP address any server sees when a device connects to it:</p>
+  <ul>
+    <li><strong>Scryfall</strong> (<a href="https://scryfall.com" target="_blank" rel="noopener">scryfall.com</a>):
+    card data, images and prices. The app sends what you search for, or the name, set and number of
+    the card being recognised.</li>
+    <li><strong>Commander Spellbook</strong> (<a href="https://commanderspellbook.com" target="_blank" rel="noopener">commanderspellbook.com</a>):
+    combos in the deck analysis. The app sends the names of that deck's cards.</li>
+    <li><strong>Apple</strong>: its app search, to show the names and icons of the developer's other apps.</li>
+    <li><strong>Google</strong>: Google Play (the Mazazos PRO purchase and the store pages of the
+    developer's other apps) and the technical data from ML Kit and the billing library described above.</li>
+  </ul>
+
+  <h2>Sharing decks</h2>
+  <p>A deck's QR code and list only leave your device if you choose to share them, with whoever you choose.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No accounts or sign-up.</li>
+    <li>No ads or ad networks. The banner with the developer's other apps collects nothing.</li>
+    <li>Apart from the technical data from the Google libraries described above, no analytics or tracking.</li>
+    <li>No location, contacts, photo library or advertising identifier.</li>
+    <li>No data is sold.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Mazazos is not directed at children under 13 and asks nobody for personal data.</p>
+
+  <h2>Changes</h2>
+  <p>If the app adds a feature that handles data differently, this page will be updated before
+  that version is released.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:jucabime@hotmail.com">jucabime@hotmail.com</a></p>
+
+  <p class="legal">Mazazos is unofficial Fan Content permitted under the Fan Content Policy. Not
+  approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast.
+  ©Wizards of the Coast LLC. Card data and images: Scryfall.</p>
+
+  <footer>Mazazos para Android · com.jucabime.mazazos · © 2026 Juan Carlos Bivia Mendoza</footer>
+</div>
+</body>
+</html>
